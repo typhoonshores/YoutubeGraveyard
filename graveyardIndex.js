@@ -1,4 +1,6 @@
 //function to begin search after enter button is pressed
+const keyLength = 10;
+//how many characters long that set of values after the "-" flag seem to be
 function scanResults(){
 
   document.getElementById("linkResults").innerHTML="";
@@ -14,7 +16,20 @@ function scanResults(){
 
 //function that takes the youtube link string and returns results of modified string google searched
 function googleResult(string){
-  var result = "";
+  var result = "Invalid";
+  //default result invalid
+  var flagIndex = 0;
+  if(string.includes("youtube.com") || string.includes("youtu.be") || string.includes("s.ytimg.com") || string.includes("i2.ytimg.com")){
+    //if a youtube link
 
+    flagIndex = string.indexOf('-');
+    result = string.substring(flagIndex + 1, flagIndex + keyLength + 1)
+
+    //begin at "-" flag in url and copy ten characters after
+
+    //// TODO: Google current value of result and return links that show up on regular google search,
+    //google images, bing search, duckduckgo and display links as result variable instead with newline characters
+    //in between them
+  }
   return result;
 }
