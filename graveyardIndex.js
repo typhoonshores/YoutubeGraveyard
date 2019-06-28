@@ -1,5 +1,5 @@
 //function to begin search after enter button is pressed
-const keyLength = 10;
+const keyLength = 11;
 //how many characters long that set of values after the "-" flag seem to be
 function scanResults(){
 
@@ -22,7 +22,7 @@ function googleResult(string){
   if(string.includes("youtube.com") || string.includes("youtu.be") || string.includes("s.ytimg.com") || string.includes("i2.ytimg.com")){
     //if a youtube link
 
-    flagIndex = string.indexOf('-');
+    flagIndex = string.indexOf('=');
     result = string.substring(flagIndex + 1, flagIndex + keyLength + 1)
 
     //begin at "-" flag in url and copy ten characters after
