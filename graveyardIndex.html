@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Caesar Cipher webpage by Armand -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Youtube Graveyard</title>
+    <!-- title of page -->
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <style>
+
+      body {
+        text-align: center;
+      }
+
+      h1 {
+        text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+        color:#dea300;
+        font-family:impact;
+        /* Sets the font border of h1 elements to be red + color and font of text*/
+      }
+
+      fieldset {
+        display: block;
+        margin-top: 50px;
+        margin-left: 400px;
+        margin-right: 400px;
+        padding-bottom: 30px;
+        border-radius:10px;
+        border:0;
+        background-color:#e8b017;
+        /* Design margins and size of fieldsets where results appear */
+
+      }
+      button {
+        border: 0;
+        background: #0087cc;
+        border-radius: 4px;
+        box-shadow: 0 5px 0 #006599;
+        color: #fff;
+        cursor: pointer;
+        font: inherit;
+        margin: 0;
+        outline: 0;
+        padding: 12px 20px;
+        transition: all .1s linear;
+        /* Fancy enter button design */
+      }
+
+      button:active {
+        box-shadow: 0 2px 0 #006599;
+        transform: translateY(3px);
+        /* transition when mouse clicks enter */
+      }
+      button:hover {
+        background: #ff7b29;
+        border-radius: 50%;
+        /* transition when mouse hovers over submit button */
+      }
+      input{
+        border-radius: 30px;
+        /* makes input string area curved */
+      }
+      legend{
+        text-shadow: -1px 0 #8353f4, 0 1px #8353f4, 1px 0 #8353f4, 0 -1px #8353f4;
+        font-family:verdana;
+        color:#d11504;
+        /* gives the title of fieldsets a pink font border */
+      }
+
+    </style>
+  </head>
+
+
+  <body>
+    <h style="font-size:70px; color:#ff6200;">
+      <u>Youtube Graveyard</u>
+    </h>
+    <!-- underlined title of page -->
+
+    <h1 ><br> Please enter a link to a deleted youtube video!</h1>
+    <!-- Input part title -->
+
+    <input type="text" id="userInputLink">
+    <!-- creates input for string and an id for js -->
+
+
+    <button  style="margin-top:30px;" onclick="scanResults()">Enter</button>
+    <!-- sets margin for enter button and on click by user will start function in js -->
+
+    <fieldset>
+      <legend>Results:
+        <p id="linkResults"></p>
+      </legend>
+    </fieldset>
+    <!-- field for resulting string(s) after search for results-->
+    <script src="graveyardIndex.js"></script>
+    <!-- initializes js -->
+
+  </body>
+</html>
