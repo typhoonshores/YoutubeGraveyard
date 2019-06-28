@@ -1,0 +1,13 @@
+Examples of Youtube links:
+
+http://www.youtube.com/watch?v=-wtIMTCHWuI
+
+http://www.youtube.com/v/-wtIMTCHWuI?version=3&autohide=1
+
+http://youtu.be/-wtIMTCHWuI
+
+http://www.youtube.com/oembed?url=http%3A//www.youtube.com/watch?v%3D-wtIMTCHWuI&format=json
+
+http://s.ytimg.com/yt/favicon-wtIMTCHWuI.ico
+
+http://i2.ytimg.com/vi/-wtIMTCHWuI/hqdefault.jpg
