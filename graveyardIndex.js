@@ -27,6 +27,7 @@ function googleResult(string){
 
     //begin at "-" flag in url and copy ten characters after
 
+    window.open('http://google.com/search?q='+result);
     //// TODO: Google current value of result and return links that show up on regular google search,
     //google images, bing search, duckduckgo and display links as result variable instead with newline characters
     //in between them
